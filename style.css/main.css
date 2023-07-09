@@ -1,0 +1,375 @@
+/*reset*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/*estilos generales*/
+
+header{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+header h1{
+    font-weight: 100;
+    text-align: center;
+    font-size: 2rem;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    background-color: rgb(224, 209, 213);
+    margin-top: auto;
+}
+
+body header .menu{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+body header .menu .submenu .logo{
+    width: 50%;
+    height: 50%;
+    
+}
+
+body header .menu{
+    text-align: center;
+}
+footer{
+    background-color: rgb(224, 209, 213);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 100;
+    padding-bottom: 0.1rem;
+    margin-bottom: 0rem;
+}
+
+footer h2{
+    font-size: 1.5rem;
+     margin-left: 4rem;
+    font-weight: 200;
+    padding: 2rem 0rem 0rem 0rem;
+}
+
+footer ul li {
+    margin-left: 2.5rem;
+    list-style: none;
+}
+    
+
+footer h3{
+    background-color: rgb(224, 209, 213);
+    font-size: 1rem;
+    text-align: center;
+    padding-bottom: 1rem;
+   
+}
+
+
+/*estilos de inicio*/
+
+main {
+    margin-top: 2rem;
+    height: 55vh;
+}
+main .container{
+    font-size: 1.2rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    font-weight: 200;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    
+}
+
+main .container .texto-dos{
+display: none;
+}
+
+main .container-dos .mates img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    padding: 2rem 2rem 3rem 2rem;
+}
+main .conatiner-dos .mates-dos{
+    display: none;
+}
+
+/*mq de desktop*/
+
+@media screen and (min-width: 1024px){
+   
+    main{
+        height: 70vh;
+    }
+    main .container{
+        display: grid;
+    }
+    
+    main .container .texto-dos{
+        display: block;
+    }
+
+    main .conatiner-dos{
+        display: grid;
+        grid-template-areas:
+        "img img" ;
+    }
+    main .container-dos .mates img{
+        height: 50vh;
+    }
+    
+}
+
+
+
+/*estilos de productos*/
+
+.main-productos{
+    height: 300vh;
+}
+
+.main-productos h2{
+    text-align: center;
+    margin: 1rem;
+}
+.main-productos .sector-uno, .sector-dos{
+    height: 150vh;
+}
+
+
+.main-productos .sector-uno .mate{
+    display: grid;          
+}
+
+.main-productos .sector-uno .mate .imagen{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+.main-productos .sector-uno .mate .imagen img{
+    width: 80%;
+    height: 80%;
+    object-fit: cover;
+    
+}
+
+.main-productos .sector-uno div .boton{
+    background-color: rgb(224, 209, 213);
+    font-weight: 300;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    border-radius: 10%;
+    margin: 0rem 0.5rem 0rem 0.5rem;
+    justify-self: center;
+    align-self: center;
+}
+
+.main-productos .sector-uno div p{
+    margin: 0rem 0.5rem 0rem 0.5rem;
+    justify-self: center;
+    align-self: center;
+}
+
+
+
+.main-productos .sector-dos .sets {
+    display: grid;
+    justify-items: center;
+    flex-direction: column;
+    
+}
+.main-productos .sector-dos .sets .imagen{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+.main-productos .sector-dos .sets .imagen img{
+    width: 80%;
+    height: 80%;
+    object-fit: cover;
+}
+
+.main-productos .sector-dos div .boton{
+    background-color: rgb(224, 209, 213);
+    font-weight: 300;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    border-radius: 10%;
+    margin: 0rem 0.5rem 0rem 0.5rem;
+}
+
+.main-productos .sector-dos div p{
+    margin: 0rem 0.5rem 0rem 0.5rem;
+}
+
+
+/*mq de desktop*/
+
+@media screen and (min-width: 1024px) {
+
+    .main-productos{
+        height: 150vh;
+    }
+    .main-productos .sector-uno {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        align-items: start;
+        height: 70vh;
+    }
+    .main-productos .sector-uno .mate{
+        display: grid;
+    }
+    .main-productos .sector-dos {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+       align-items: start;
+       height: 70vh;
+    }
+    .main-productos .sector-dos .sets{
+        display: grid;
+    }
+    
+
+}
+
+/*estilos de cuidados*/
+
+.main-cuidados{
+    margin: 3rem 1rem 2rem 1rem;
+    height: 70vh;
+}
+.main-cuidados .parrafo{
+    text-align: center;
+}
+.main-cuidados h2{
+    text-align: center;
+    margin: 2rem 0rem 2rem 0rem;
+}
+.main-cuidados ol li{
+    text-align: justify;
+    list-style: none;
+}
+.main-cuidados ul li{
+    text-align: justify;
+    padding:0rem 0rem 0rem 1rem;
+}
+
+/*mq de desktop*/
+
+@media screen and (min-width: 1024px){
+
+    .main-cuidados .cuidados{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 3rem;
+        
+    }
+
+    .main-cuidados .cuidados .curado ol li{
+       padding-left: 5rem;
+
+    }
+    .main-cuidados .cuidados .curado-dos ul li{
+       
+       padding-left: 5rem;
+    }
+
+}  
+
+
+/*estilos de quienes somos*/
+
+.main-quienesomos{
+
+    margin: 3rem 2rem 2rem 2rem;
+    height: 80vh;
+}
+.main-quienesomos h2{
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.main-quienesomos .biografia{
+    text-align: justify;
+}
+.main-quienesomos .pincel img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    
+
+}
+.main-quienesomos .creacion p{
+    text-align: center;
+    
+} 
+
+/*mq de desktop*/
+
+@media screen and (min-width: 1024px){
+
+    .main-quienesomos{
+        height: 90vh;
+    }
+    .main-quienesomos .qs{
+        display: grid;
+        justify-items: center;
+        height: 70vh;
+        
+    }
+    .main-quienesomos .qs .pincel {
+        height: 80%;
+        width: 50%;
+        object-fit: cover;
+
+    }
+    
+}  
+
+
+/*estilos de informacion*/
+
+.main-informacion{
+    margin: 2rem 0rem 5rem 3rem;
+    height: 70%;
+}
+
+.main-informacion h2{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: justify;
+    margin: 2rem 0rem 1rem 1rem;
+}
+
+.main-informacion form fieldset legend{
+    text-align: justify;
+    margin: 2rem 1rem 1rem 0rem;
+    font-weight: 400;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.main-informacion ul li{
+    text-align: justify;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+}
+
+/*mq de desktop*/
+
+@media screen and (min-width: 1024px) {
+
+    .main-informacion .todo{
+         display: grid;
+         grid-template-columns: 1fr 1fr;
+         height: 70vh;
+    }
+    footer p{
+        padding-left: 4.5rem;
+        font-weight: bold;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    
+}
